@@ -100,39 +100,3 @@ function updateCartTotal() {
     }
     document.getElementsByClassName('cart-total-price')[0].innerText = 'sh' + total
 }
-function validateForm() {
-    var waist = document.getElementById("waist").value;
-    var hipsize = document.getElementById("hipsize").value;
-    var height = document.getElementById("height").value;
-    var bust = document.getElementById("bust").value;
-    var color = document.getElementById("color").value;
-    var design = document.getElementById("design").value;
-    var email = document.getElementById("email").value
-       if (email ==="") {
-           alert("please enter your email address for communication purposes.")
-       } else if (waist === "") {
-      alert("Please enter your waist size");
-      return false;
-    } else if (hipsize === "") {
-      alert("Please enter your hip size");
-      return false;
-    } else if (height === "") {
-        alert("Please enter your height");
-        return false;
-    } else if (bust === "") {
-        alert("Please enter your bust size");
-        return false;
-    } else if (color === "") {
-        alert("Please specify the color you'd want your clothe to have");
-        return false;
-    } else if (design === "") {
-        alert("Please specify the design you'd like your clothe to have");
-        return false;        
-    } else {
-      alert(
-        email + "Your order has been received. We are doing our best to make exactly what you want in a week's time"
-      );
-    }
-    event.preventDefault();
-  }
-
